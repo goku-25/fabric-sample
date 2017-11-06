@@ -1,0 +1,1036 @@
+[32m[2017-09-06 17:26:36.841] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:26:36.842] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:26:36.842] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 17:26:36 GMT+0530 (IST) <<<
+[32m[2017-09-06 17:26:36.843] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:26:36.843] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 17:26:36.843] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 17:26:36.843] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 17:26:36.843] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:26:36.844] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 17:26:36.844] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 17:26:36.845] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 17:26:36.845] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 17:26:36.849] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 17:26:36.850] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 17:26:36.850] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 17:26:36.850] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 17:26:36.859] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 17:26:36.883] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[31m[2017-09-06 17:26:37.228] [ERROR] console - [39mError: EACCES: permission denied, open '/home/dhananjayp/.hfc-key-store/5890f0061619c06fb29dea8cb304edecc020fe63f41a6db109f1e227cc1cb2a8-pub'
+    at Error (native)
+[31m[2017-09-06 17:26:37.229] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[32m[2017-09-06 17:26:38.441] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 17:26:38.450] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 17:26:38.451] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 17:26:38.451] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 17:26:38.452] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 17:26:38.454] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 17:26:38.454] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 17:26:38.546] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 17:26:38.554] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:26:38.554] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 17:26:38.867] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 17:26:38.873] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 17:26:38.874] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 17:26:38.874] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 17:26:38.876] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:26:38.876] [TRACE] kv_store_model - [39mget : params - {"id":"member.dhananjay.p"} 
+[32m[2017-09-06 17:26:39.183] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.dhananjay.p - undefined
+[32m[2017-09-06 17:26:39.198] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: dhananjay.p - undefined
+[34m[2017-09-06 17:26:39.200] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-09-06 17:26:39.207] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: dhananjay.p - undefined
+[32m[2017-09-06 17:26:39.211] [INFO] console - [39mserver is running on3000
+[32m[2017-09-06 17:27:15.199] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:27:15.200] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:27:15.200] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 17:27:15 GMT+0530 (IST) <<<
+[32m[2017-09-06 17:27:15.200] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:27:15.200] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 17:27:15.200] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 17:27:15.201] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 17:27:15.201] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:27:15.201] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 17:27:15.201] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 17:27:15.202] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 17:27:15.202] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 17:27:15.209] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 17:27:15.209] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 17:27:15.209] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 17:27:15.209] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 17:27:15.215] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 17:27:15.232] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[31m[2017-09-06 17:27:15.465] [ERROR] console - [39mError: EACCES: permission denied, open '/home/dhananjayp/.hfc-key-store/5890f0061619c06fb29dea8cb304edecc020fe63f41a6db109f1e227cc1cb2a8-pub'
+    at Error (native)
+[31m[2017-09-06 17:27:15.465] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[32m[2017-09-06 17:27:16.735] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 17:27:16.746] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 17:27:16.746] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 17:27:16.747] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 17:27:16.748] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 17:27:16.751] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 17:27:16.753] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 17:27:16.819] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 17:27:16.830] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:27:16.830] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 17:27:17.145] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 17:27:17.173] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 17:27:17.174] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 17:27:17.174] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 17:27:17.179] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:27:17.179] [TRACE] kv_store_model - [39mget : params - {"id":"member.dhananjay.p"} 
+[32m[2017-09-06 17:27:17.507] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.dhananjay.p - undefined
+[32m[2017-09-06 17:27:17.516] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: dhananjay.p - undefined
+[34m[2017-09-06 17:27:17.516] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-09-06 17:27:17.518] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: dhananjay.p - undefined
+[32m[2017-09-06 17:27:17.518] [INFO] console - [39mserver is running on3000
+[32m[2017-09-06 17:29:47.249] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:29:47.251] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:29:47.251] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 17:29:47 GMT+0530 (IST) <<<
+[32m[2017-09-06 17:29:47.251] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:29:47.251] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 17:29:47.251] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 17:29:47.252] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 17:29:47.252] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:29:47.252] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 17:29:47.252] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 17:29:47.253] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 17:29:47.253] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 17:29:47.259] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 17:29:47.259] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 17:29:47.259] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 17:29:47.259] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 17:29:47.265] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 17:29:47.281] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[31m[2017-09-06 17:29:47.500] [ERROR] console - [39mError: EACCES: permission denied, open '/home/dhananjayp/.hfc-key-store/5890f0061619c06fb29dea8cb304edecc020fe63f41a6db109f1e227cc1cb2a8-pub'
+    at Error (native)
+[31m[2017-09-06 17:29:47.500] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[32m[2017-09-06 17:29:48.755] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 17:29:48.764] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 17:29:48.764] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 17:29:48.764] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 17:29:48.765] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 17:29:48.767] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 17:29:48.767] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 17:29:48.828] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 17:29:48.835] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:29:48.836] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 17:29:49.158] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 17:29:49.190] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 17:29:49.191] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 17:29:49.193] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 17:29:49.196] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:29:49.196] [TRACE] kv_store_model - [39mget : params - {"id":"member.dhananjay.p"} 
+[32m[2017-09-06 17:29:49.510] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.dhananjay.p - undefined
+[32m[2017-09-06 17:29:49.526] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: dhananjay.p - undefined
+[34m[2017-09-06 17:29:49.529] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-09-06 17:29:49.536] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: dhananjay.p - undefined
+[32m[2017-09-06 17:29:49.541] [INFO] console - [39mserver is running on3000
+[32m[2017-09-06 17:31:54.699] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:31:54.700] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:31:54.700] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 17:31:54 GMT+0530 (IST) <<<
+[32m[2017-09-06 17:31:54.700] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:31:54.700] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 17:31:54.701] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 17:31:54.701] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 17:31:54.701] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:31:54.701] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 17:31:54.702] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 17:31:54.702] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 17:31:54.702] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 17:31:54.707] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 17:31:54.707] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 17:31:54.707] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 17:31:54.707] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 17:31:54.714] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 17:31:54.732] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[31m[2017-09-06 17:31:54.957] [ERROR] console - [39mError: EACCES: permission denied, open '/home/dhananjayp/.hfc-key-store/5890f0061619c06fb29dea8cb304edecc020fe63f41a6db109f1e227cc1cb2a8-pub'
+    at Error (native)
+[31m[2017-09-06 17:31:54.957] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[32m[2017-09-06 17:31:56.212] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 17:31:56.223] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 17:31:56.224] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 17:31:56.225] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 17:31:56.225] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 17:31:56.227] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 17:31:56.228] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 17:31:56.286] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 17:31:56.293] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:31:56.294] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 17:31:56.613] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 17:31:56.623] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 17:31:56.624] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 17:31:56.624] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 17:31:56.626] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:31:56.626] [TRACE] kv_store_model - [39mget : params - {"id":"member.dhananjay.p"} 
+[32m[2017-09-06 17:31:56.940] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.dhananjay.p - undefined
+[32m[2017-09-06 17:31:56.955] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: dhananjay.p - undefined
+[34m[2017-09-06 17:31:56.957] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-09-06 17:31:56.964] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: dhananjay.p - undefined
+[32m[2017-09-06 17:31:56.966] [INFO] console - [39mserver is running on3000
+[32m[2017-09-06 17:36:29.785] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:36:29.786] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:36:29.786] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 17:36:29 GMT+0530 (IST) <<<
+[32m[2017-09-06 17:36:29.787] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:36:29.787] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 17:36:29.787] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 17:36:29.787] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 17:36:29.788] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:36:29.788] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 17:36:29.788] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 17:36:29.789] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 17:36:29.789] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 17:36:29.794] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 17:36:29.795] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 17:36:29.795] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 17:36:29.795] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 17:36:29.801] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 17:36:29.817] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[31m[2017-09-06 17:36:30.003] [ERROR] console - [39mError: EACCES: permission denied, open '/home/dhananjayp/.hfc-key-store/5890f0061619c06fb29dea8cb304edecc020fe63f41a6db109f1e227cc1cb2a8-pub'
+    at Error (native)
+[31m[2017-09-06 17:36:30.003] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[32m[2017-09-06 17:36:31.247] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 17:36:31.258] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 17:36:31.259] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 17:36:31.261] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 17:36:31.262] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 17:36:31.263] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 17:36:31.264] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 17:36:31.324] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 17:36:31.330] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:36:31.331] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 17:36:31.642] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 17:36:31.662] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 17:36:31.663] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 17:36:31.664] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 17:36:31.670] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:36:31.670] [TRACE] kv_store_model - [39mget : params - {"id":"member.dhananjay.p"} 
+[32m[2017-09-06 17:36:31.985] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.dhananjay.p - undefined
+[32m[2017-09-06 17:36:31.992] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: dhananjay.p - undefined
+[34m[2017-09-06 17:36:31.992] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-09-06 17:36:31.993] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: dhananjay.p - undefined
+[32m[2017-09-06 17:36:31.994] [INFO] console - [39mserver is running on3000
+[32m[2017-09-06 17:38:38.508] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:38:38.509] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:38:38.509] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 17:38:38 GMT+0530 (IST) <<<
+[32m[2017-09-06 17:38:38.510] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:38:38.510] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 17:38:38.510] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 17:38:38.510] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 17:38:38.510] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:38:38.510] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 17:38:38.511] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 17:38:38.511] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 17:38:38.511] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 17:38:38.517] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 17:38:38.517] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 17:38:38.517] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 17:38:38.517] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 17:38:38.524] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 17:38:38.543] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[31m[2017-09-06 17:38:38.742] [ERROR] console - [39mError: EACCES: permission denied, open '/home/dhananjayp/.hfc-key-store/5890f0061619c06fb29dea8cb304edecc020fe63f41a6db109f1e227cc1cb2a8-pub'
+    at Error (native)
+[31m[2017-09-06 17:38:38.742] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[32m[2017-09-06 17:38:40.020] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 17:38:40.030] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 17:38:40.031] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 17:38:40.033] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 17:38:40.033] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 17:38:40.038] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 17:38:40.039] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 17:38:40.101] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 17:38:40.109] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:38:40.109] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 17:38:40.430] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 17:38:40.445] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 17:38:40.445] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 17:38:40.446] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 17:38:40.448] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:38:40.448] [TRACE] kv_store_model - [39mget : params - {"id":"member.dhananjay.p"} 
+[32m[2017-09-06 17:38:40.760] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.dhananjay.p - undefined
+[32m[2017-09-06 17:38:40.767] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: dhananjay.p - undefined
+[34m[2017-09-06 17:38:40.768] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-09-06 17:38:40.769] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: dhananjay.p - undefined
+[32m[2017-09-06 17:38:40.771] [INFO] console - [39mserver is running on3000
+[32m[2017-09-06 17:40:32.504] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:40:32.506] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:40:32.506] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 17:40:32 GMT+0530 (IST) <<<
+[32m[2017-09-06 17:40:32.506] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:40:32.506] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 17:40:32.506] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 17:40:32.506] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 17:40:32.506] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:40:32.507] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 17:40:32.507] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 17:40:32.507] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 17:40:32.507] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 17:40:32.513] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 17:40:32.513] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 17:40:32.514] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 17:40:32.514] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 17:40:32.520] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 17:40:32.537] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[31m[2017-09-06 17:40:32.739] [ERROR] console - [39mError: EACCES: permission denied, open '/home/dhananjayp/.hfc-key-store/5890f0061619c06fb29dea8cb304edecc020fe63f41a6db109f1e227cc1cb2a8-pub'
+    at Error (native)
+[31m[2017-09-06 17:40:32.739] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[33m[2017-09-06 17:40:33.452] [WARN] console - [39mDb.prototype.authenticate method will no longer be available in the next major release 3.x as MongoDB 3.6 will only allow auth against users in the admin db and will no longer allow multiple credentials on a socket. Please authenticate using MongoClient.connect with auth credentials.
+[32m[2017-09-06 17:40:34.012] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 17:40:34.022] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 17:40:34.023] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 17:40:34.025] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 17:40:34.025] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 17:40:34.029] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 17:40:34.030] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 17:40:34.087] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 17:40:34.093] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:40:34.094] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 17:40:34.424] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 17:40:34.433] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 17:40:34.433] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 17:40:34.433] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 17:40:34.434] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:40:34.434] [TRACE] kv_store_model - [39mget : params - {"id":"member.dhananjay.p"} 
+[32m[2017-09-06 17:40:34.746] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.dhananjay.p - undefined
+[32m[2017-09-06 17:40:34.760] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: dhananjay.p - undefined
+[34m[2017-09-06 17:40:34.761] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-09-06 17:40:34.768] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: dhananjay.p - undefined
+[32m[2017-09-06 17:40:34.769] [INFO] console - [39mserver is running on3000
+[32m[2017-09-06 17:42:30.668] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:42:30.669] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:42:30.669] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 17:42:30 GMT+0530 (IST) <<<
+[32m[2017-09-06 17:42:30.669] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:42:30.669] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 17:42:30.670] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 17:42:30.670] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 17:42:30.670] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:42:30.671] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 17:42:30.671] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 17:42:30.671] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 17:42:30.671] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 17:42:30.679] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 17:42:30.679] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 17:42:30.680] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 17:42:30.680] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 17:42:30.686] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 17:42:30.702] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[32m[2017-09-06 17:42:30.921] [INFO] console - [39mCheck user is enrolled, and set a query URL in the network
+[32m[2017-09-06 17:42:30.926] [INFO] console - [39mAssigning transaction_id:  215fabbb7232bada2614b9a595d98f377801f19b2e542573152623d591bbf583
+[31m[2017-09-06 17:42:30.947] [ERROR] console - [39mtransaction proposal was bad
+[31m[2017-09-06 17:42:30.947] [ERROR] console - [39mFailed to send Proposal or receive valid response. Response null or status is not 200. exiting...
+[31m[2017-09-06 17:42:30.947] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[33m[2017-09-06 17:42:31.385] [WARN] console - [39mDb.prototype.authenticate method will no longer be available in the next major release 3.x as MongoDB 3.6 will only allow auth against users in the admin db and will no longer allow multiple credentials on a socket. Please authenticate using MongoClient.connect with auth credentials.
+[32m[2017-09-06 17:42:32.130] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 17:42:32.139] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 17:42:32.139] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 17:42:32.139] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 17:42:32.139] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 17:42:32.141] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 17:42:32.142] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 17:42:32.198] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 17:42:32.205] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:42:32.205] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 17:42:32.515] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 17:42:32.521] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 17:42:32.521] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 17:42:32.522] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 17:42:32.523] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:42:32.524] [TRACE] kv_store_model - [39mget : params - {"id":"member.dhananjay.p"} 
+[32m[2017-09-06 17:42:32.830] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.dhananjay.p - undefined
+[32m[2017-09-06 17:42:32.839] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: dhananjay.p - undefined
+[34m[2017-09-06 17:42:32.840] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-09-06 17:42:32.842] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: dhananjay.p - undefined
+[32m[2017-09-06 17:42:32.842] [INFO] console - [39mserver is running on3000
+[32m[2017-09-06 17:43:50.171] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:43:50.172] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:43:50.172] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 17:43:50 GMT+0530 (IST) <<<
+[32m[2017-09-06 17:43:50.173] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:43:50.173] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 17:43:50.173] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 17:43:50.173] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 17:43:50.173] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:43:50.173] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 17:43:50.174] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 17:43:50.174] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 17:43:50.174] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 17:43:50.178] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 17:43:50.179] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 17:43:50.179] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 17:43:50.180] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 17:43:50.186] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 17:43:50.203] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[32m[2017-09-06 17:43:50.407] [INFO] console - [39mCheck user is enrolled, and set a query URL in the network
+[32m[2017-09-06 17:43:50.412] [INFO] console - [39mAssigning transaction_id:  eee99cd6bf48648494c9a46c33976a4a49c35ec07ba3930bb085b164cba037f1
+[31m[2017-09-06 17:43:50.434] [ERROR] console - [39mtransaction proposal was bad
+[31m[2017-09-06 17:43:50.434] [ERROR] console - [39mFailed to send Proposal or receive valid response. Response null or status is not 200. exiting...
+[31m[2017-09-06 17:43:50.434] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[33m[2017-09-06 17:43:50.763] [WARN] console - [39mDb.prototype.authenticate method will no longer be available in the next major release 3.x as MongoDB 3.6 will only allow auth against users in the admin db and will no longer allow multiple credentials on a socket. Please authenticate using MongoClient.connect with auth credentials.
+[32m[2017-09-06 17:43:51.666] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 17:43:51.676] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 17:43:51.677] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 17:43:51.678] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 17:43:51.679] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 17:43:51.682] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 17:43:51.688] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 17:43:51.752] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 17:43:51.759] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:43:51.760] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 17:43:52.074] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 17:43:52.099] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 17:43:52.099] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 17:43:52.100] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 17:43:52.103] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:43:52.103] [TRACE] kv_store_model - [39mget : params - {"id":"member.dhananjay.p"} 
+[32m[2017-09-06 17:43:52.422] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.dhananjay.p - undefined
+[32m[2017-09-06 17:43:52.438] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: dhananjay.p - undefined
+[34m[2017-09-06 17:43:52.439] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-09-06 17:43:52.447] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: dhananjay.p - undefined
+[32m[2017-09-06 17:43:52.448] [INFO] console - [39mserver is running on3000
+[32m[2017-09-06 17:47:14.188] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:47:14.189] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:47:14.189] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 17:47:14 GMT+0530 (IST) <<<
+[32m[2017-09-06 17:47:14.189] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:47:14.189] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 17:47:14.189] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 17:47:14.189] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 17:47:14.189] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:47:14.190] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 17:47:14.190] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 17:47:14.190] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 17:47:14.190] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 17:47:14.195] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 17:47:14.195] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 17:47:14.195] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 17:47:14.196] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 17:47:14.203] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 17:47:14.219] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[32m[2017-09-06 17:47:14.401] [INFO] console - [39mCheck user is enrolled, and set a query URL in the network
+[32m[2017-09-06 17:47:14.406] [INFO] console - [39mAssigning transaction_id:  cc130a2c1579f3d20e8d0f0bf12694600d3a804dab977fc55ad65d136d078768
+[31m[2017-09-06 17:47:14.426] [ERROR] console - [39mtransaction proposal was bad
+[31m[2017-09-06 17:47:14.427] [ERROR] console - [39mFailed to send Proposal or receive valid response. Response null or status is not 200. exiting...
+[31m[2017-09-06 17:47:14.428] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[33m[2017-09-06 17:47:15.002] [WARN] console - [39mDb.prototype.authenticate method will no longer be available in the next major release 3.x as MongoDB 3.6 will only allow auth against users in the admin db and will no longer allow multiple credentials on a socket. Please authenticate using MongoClient.connect with auth credentials.
+[32m[2017-09-06 17:47:15.692] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 17:47:15.701] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 17:47:15.701] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 17:47:15.701] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 17:47:15.701] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 17:47:15.703] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 17:47:15.704] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 17:47:15.762] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 17:47:15.770] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:47:15.771] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 17:47:16.082] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 17:47:16.092] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 17:47:16.092] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 17:47:16.092] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 17:47:16.093] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:47:16.093] [TRACE] kv_store_model - [39mget : params - {"id":"member.dhananjay.p"} 
+[32m[2017-09-06 17:47:16.402] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.dhananjay.p - undefined
+[32m[2017-09-06 17:47:16.409] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: dhananjay.p - undefined
+[34m[2017-09-06 17:47:16.410] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-09-06 17:47:16.412] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: dhananjay.p - undefined
+[32m[2017-09-06 17:47:16.412] [INFO] console - [39mserver is running on3000
+[32m[2017-09-06 17:49:22.437] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:49:22.438] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:49:22.439] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 17:49:22 GMT+0530 (IST) <<<
+[32m[2017-09-06 17:49:22.439] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:49:22.439] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 17:49:22.439] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 17:49:22.439] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 17:49:22.440] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:49:22.440] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 17:49:22.440] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 17:49:22.440] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 17:49:22.440] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 17:49:22.445] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 17:49:22.445] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 17:49:22.445] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 17:49:22.445] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 17:49:22.453] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 17:49:22.471] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[32m[2017-09-06 17:49:22.696] [INFO] console - [39mCheck user is enrolled, and set a query URL in the network
+[32m[2017-09-06 17:49:22.701] [INFO] console - [39mAssigning transaction_id:  efbf82f5da36429f7b1281040f7370b20e1a18e0a08a857381af17cd8a322a73
+[31m[2017-09-06 17:49:22.723] [ERROR] console - [39mtransaction proposal was bad
+[31m[2017-09-06 17:49:22.723] [ERROR] console - [39mFailed to send Proposal or receive valid response. Response null or status is not 200. exiting...
+[31m[2017-09-06 17:49:22.723] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[33m[2017-09-06 17:49:23.288] [WARN] console - [39mDb.prototype.authenticate method will no longer be available in the next major release 3.x as MongoDB 3.6 will only allow auth against users in the admin db and will no longer allow multiple credentials on a socket. Please authenticate using MongoClient.connect with auth credentials.
+[32m[2017-09-06 17:49:24.022] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 17:49:24.033] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 17:49:24.034] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 17:49:24.035] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 17:49:24.035] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 17:49:24.039] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 17:49:24.041] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 17:49:24.100] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 17:49:24.107] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:49:24.107] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 17:49:24.464] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 17:49:24.485] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 17:49:24.486] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 17:49:24.488] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[32m[2017-09-06 17:49:24.489] [INFO] console - [39mrunClient Error Occurred ReferenceError: bcSdk is not defined
+    at /opt/gopath/src/fabric-samples/app.js:74:20
+    at tryCatcher (/opt/gopath/src/fabric-samples/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/opt/gopath/src/fabric-samples/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/opt/gopath/src/fabric-samples/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/opt/gopath/src/fabric-samples/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/opt/gopath/src/fabric-samples/node_modules/bluebird/js/release/promise.js:693:18)
+    at Async._drainQueue (/opt/gopath/src/fabric-samples/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/opt/gopath/src/fabric-samples/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/opt/gopath/src/fabric-samples/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+[32m[2017-09-06 17:52:53.460] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:52:53.462] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:52:53.462] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 17:52:53 GMT+0530 (IST) <<<
+[32m[2017-09-06 17:52:53.462] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:52:53.462] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 17:52:53.462] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 17:52:53.462] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 17:52:53.462] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:52:53.463] [INFO] loggingHelper - [39mCreated logger for app.js at level ALL
+[34m[2017-09-06 17:52:53.463] [TRACE] app.js - [39msetup : entry
+[34m[2017-09-06 17:52:53.463] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 17:52:53.463] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 17:52:53.469] [TRACE] app.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 17:52:53.469] [TRACE] app.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 17:52:53.469] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 17:52:53.470] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 17:52:53.477] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 17:52:53.492] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[32m[2017-09-06 17:52:53.695] [INFO] console - [39mCheck user is enrolled, and set a query URL in the network
+[32m[2017-09-06 17:52:53.700] [INFO] console - [39mAssigning transaction_id:  e36a306bf86701eaa5c472f17f03d71fa23955fde68568d2baaa2c6846369bdc
+[31m[2017-09-06 17:52:53.720] [ERROR] console - [39mtransaction proposal was bad
+[31m[2017-09-06 17:52:53.720] [ERROR] console - [39mFailed to send Proposal or receive valid response. Response null or status is not 200. exiting...
+[31m[2017-09-06 17:52:53.720] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[33m[2017-09-06 17:52:54.189] [WARN] console - [39mDb.prototype.authenticate method will no longer be available in the next major release 3.x as MongoDB 3.6 will only allow auth against users in the admin db and will no longer allow multiple credentials on a socket. Please authenticate using MongoClient.connect with auth credentials.
+[32m[2017-09-06 17:52:54.941] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 17:52:54.951] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 17:52:54.951] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 17:52:54.951] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 17:52:54.951] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 17:52:54.953] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 17:52:54.954] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 17:52:55.010] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 17:52:55.017] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:52:55.017] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 17:52:55.346] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 17:52:55.351] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 17:52:55.352] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 17:52:55.352] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 17:52:55.353] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:52:55.353] [TRACE] kv_store_model - [39mget : params - {"id":"member.risabh.s"} 
+[32m[2017-09-06 17:52:55.672] [INFO] kv_store_model - [39mget : member file with id member.risabh.s does not exist - { Error: missing    at Request._callback (/opt/gopath/src/fabric-samples/node_modules/cloudant-nano/lib/nano.js:248:15)    at Request.self.callback (/opt/gopath/src/fabric-samples/node_modules/cloudant-nano/node_modules/request/request.js:188:22)    at emitTwo (events.js:106:13)    at Request.emit (events.js:191:7)    at Request.<anonymous> (/opt/gopath/src/fabric-samples/node_modules/cloudant-nano/node_modules/request/request.js:1171:10)    at emitOne (events.js:96:13)    at Request.emit (events.js:188:7)    at IncomingMessage.<anonymous> (/opt/gopath/src/fabric-samples/node_modules/cloudant-nano/node_modules/request/request.js:1091:12)    at IncomingMessage.g (events.js:292:16)    at emitNone (events.js:91:20)    at IncomingMessage.emit (events.js:185:7)    at endReadableNT (_stream_readable.js:974:12)    at _combinedTickCallback (internal/process/next_tick.js:80:11)    at process._tickDomainCallback (internal/process/next_tick.js:128:9)  cause:    { Error: missing       at Request._callback (/opt/gopath/src/fabric-samples/node_modules/cloudant-nano/lib/nano.js:248:15)       at Request.self.callback (/opt/gopath/src/fabric-samples/node_modules/cloudant-nano/node_modules/request/request.js:188:22)       at emitTwo (events.js:106:13)       at Request.emit (events.js:191:7)       at Request.<anonymous> (/opt/gopath/src/fabric-samples/node_modules/cloudant-nano/node_modules/request/request.js:1171:10)       at emitOne (events.js:96:13)       at Request.emit (events.js:188:7)       at IncomingMessage.<anonymous> (/opt/gopath/src/fabric-samples/node_modules/cloudant-nano/node_modules/request/request.js:1091:12)       at IncomingMessage.g (events.js:292:16)       at emitNone (events.js:91:20)       at IncomingMessage.emit (events.js:185:7)       at endReadableNT (_stream_readable.js:974:12)       at _combinedTickCallback (internal/process/next_tick.js:80:11)       at process._tickDomainCallback (internal/process/next_tick.js:128:9)     name: 'Error',     error: 'not_found',     reason: 'missing',     scope: 'couch',     statusCode: 404,     request: [Object],     headers: [Object],     errid: 'non_200',     description: 'couch returned 404' },  isOperational: true,  error: 'not_found',  reason: 'missing',  scope: 'couch',  statusCode: 404,  request:    { method: 'GET',     headers: [Object],     uri: 'https://XXXXXX:XXXXXX@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com/devworks_app_master/member.risabh.s' },  headers:    { 'cache-control': 'must-revalidate',     'content-type': 'application/json',     date: 'Wed, 06 Sep 2017 12:22:55 GMT',     'x-couch-request-id': '0aca2c3f64',     'x-frame-options': 'DENY',     'strict-transport-security': 'max-age=31536000',     'x-content-type-options': 'nosniff',     'x-cloudant-request-class': 'lookup',     'x-cloudant-backend': 'bm-cc-syd-01',     via: '1.1 lb1.bm-cc-syd-01 (Glum/1.37.4)',     statusCode: 404,     uri: 'https://XXXXXX:XXXXXX@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com/devworks_app_master/member.risabh.s' },  errid: 'non_200',  description: 'couch returned 404' }
+[34m[2017-09-06 17:52:57.405] [TRACE] kv_store_model - [39mcreate : entry 
+[34m[2017-09-06 17:52:57.406] [TRACE] kv_store_model - [39mcreate : params - {"id":"member.risabh.s","data":"{\"name\":\"risabh.s\",\"enrollmentSecret\":\"zUmEQtvbnRZv\"}"} 
+[34m[2017-09-06 17:52:57.406] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:52:57.407] [TRACE] kv_store_model - [39mget : params - {"id":"member.risabh.s","executeRegular":true} 
+[31m[2017-09-06 17:52:57.719] [ERROR] kv_store_model - [39mget : could not fetch member file with id member.risabh.s - { Error: missing    at Request._callback (/opt/gopath/src/fabric-samples/node_modules/cloudant-nano/lib/nano.js:248:15)    at Request.self.callback (/opt/gopath/src/fabric-samples/node_modules/cloudant-nano/node_modules/request/request.js:188:22)    at emitTwo (events.js:106:13)    at Request.emit (events.js:191:7)    at Request.<anonymous> (/opt/gopath/src/fabric-samples/node_modules/cloudant-nano/node_modules/request/request.js:1171:10)    at emitOne (events.js:96:13)    at Request.emit (events.js:188:7)    at IncomingMessage.<anonymous> (/opt/gopath/src/fabric-samples/node_modules/cloudant-nano/node_modules/request/request.js:1091:12)    at IncomingMessage.g (events.js:292:16)    at emitNone (events.js:91:20)    at IncomingMessage.emit (events.js:185:7)    at endReadableNT (_stream_readable.js:974:12)    at _combinedTickCallback (internal/process/next_tick.js:80:11)    at process._tickDomainCallback (internal/process/next_tick.js:128:9)  cause:    { Error: missing       at Request._callback (/opt/gopath/src/fabric-samples/node_modules/cloudant-nano/lib/nano.js:248:15)       at Request.self.callback (/opt/gopath/src/fabric-samples/node_modules/cloudant-nano/node_modules/request/request.js:188:22)       at emitTwo (events.js:106:13)       at Request.emit (events.js:191:7)       at Request.<anonymous> (/opt/gopath/src/fabric-samples/node_modules/cloudant-nano/node_modules/request/request.js:1171:10)       at emitOne (events.js:96:13)       at Request.emit (events.js:188:7)       at IncomingMessage.<anonymous> (/opt/gopath/src/fabric-samples/node_modules/cloudant-nano/node_modules/request/request.js:1091:12)       at IncomingMessage.g (events.js:292:16)       at emitNone (events.js:91:20)       at IncomingMessage.emit (events.js:185:7)       at endReadableNT (_stream_readable.js:974:12)       at _combinedTickCallback (internal/process/next_tick.js:80:11)       at process._tickDomainCallback (internal/process/next_tick.js:128:9)     name: 'Error',     error: 'not_found',     reason: 'missing',     scope: 'couch',     statusCode: 404,     request: [Object],     headers: [Object],     errid: 'non_200',     description: 'couch returned 404' },  isOperational: true,  error: 'not_found',  reason: 'missing',  scope: 'couch',  statusCode: 404,  request:    { method: 'GET',     headers: [Object],     uri: 'https://XXXXXX:XXXXXX@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com/devworks_app_master/member.risabh.s' },  headers:    { 'cache-control': 'must-revalidate',     'content-type': 'application/json',     date: 'Wed, 06 Sep 2017 12:22:56 GMT',     'x-couch-request-id': 'd17f44850e',     'x-frame-options': 'DENY',     'strict-transport-security': 'max-age=31536000',     'x-content-type-options': 'nosniff',     'x-cloudant-request-class': 'lookup',     'x-cloudant-backend': 'bm-cc-syd-01',     via: '1.1 lb1.bm-cc-syd-01 (Glum/1.37.4)',     statusCode: 404,     uri: 'https://XXXXXX:XXXXXX@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com/devworks_app_master/member.risabh.s' },  errid: 'non_200',  description: 'couch returned 404' }
+[32m[2017-09-06 17:52:58.055] [INFO] kv_store_model - [39mcreate : member file successfully created - undefined
+[32m[2017-09-06 17:52:58.056] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: risabh.s - undefined
+[34m[2017-09-06 17:52:58.057] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[34m[2017-09-06 17:52:59.801] [TRACE] kv_store_model - [39mcreate : entry 
+[34m[2017-09-06 17:52:59.802] [TRACE] kv_store_model - [39mcreate : params - {"id":"member.risabh.s","data":"{\"name\":\"risabh.s\",\"enrollmentSecret\":\"zUmEQtvbnRZv\",\"enrollment\":{\"key\":\"31f324243e4323ba5d78e51837a39d8e2d51497d0aac0594997694f786181570\",\"cert\":\"3082019c30820143a003020102020101300a06082a8648ce3d0403033029310b3009060355040613025553310c300a060355040a130349424d310c300a06035504031303656361301e170d3137303930363132323135395a170d3137313230353132323135395a3035310b3009060355040613025553310c300a060355040a130349424d3118301606035504030c0f7269736162682e735c67726f7570313059301306072a8648ce3d020106082a8648ce3d03010703420004e3dce6581785009251d73147f2e49fad62879d9f87505c89d870cd4c0a4f5a52b855dc66376f380112feda39fa9732c56a195f063d1b286dfce1738d8e38cdd6a350304e300e0603551d0f0101ff040403020780300c0603551d130101ff04023000300d0603551d0e0406040401020304300f0603551d2304083006800401020304300e06065103040506070101ff040131300a06082a8648ce3d04030303470030440220765ca3a981f864a96330b183e61a4bf776caea476c70aeafc9d3ef89ce3064960220399e94b1101890d1e86ca1bc28f1962a9d8cc2b2fe7c2251ce4ff5a58a2ec0e9\",\"chainKey\":\"2d2d2d2d2d424547494e204543445341205055424c4943204b45592d2d2d2d2d0a4d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a304441516344516741456b6975476957716c6970676d6a385a776171437854346653504b4f4f0a3153706a7a48336650556636504e4b6642554c3254645046413345746a66747a787a5569486446416e7158472b767a7957633337764974776f513d3d0a2d2d2d2d2d454e44204543445341205055424c4943204b45592d2d2d2d2d0a\",\"queryStateKey\":{\"type\":\"Buffer\",\"data\":[152,238,141,6,216,32,43,121,217,40,113,255,146,97,146,71,182,177,62,112,11,92,123,119]}}}"} 
+[34m[2017-09-06 17:52:59.803] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:52:59.804] [TRACE] kv_store_model - [39mget : params - {"id":"member.risabh.s","executeRegular":true} 
+[32m[2017-09-06 17:53:00.130] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.risabh.s - undefined
+[32m[2017-09-06 17:53:00.448] [INFO] kv_store_model - [39mcreate : member file successfully created - undefined
+[32m[2017-09-06 17:53:00.463] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: risabh.s - undefined
+[32m[2017-09-06 17:53:00.463] [INFO] console - [39mserver is running on8080
+[31m[2017-09-06 17:53:37.583] [ERROR] console - [39mReferenceError: crypto is not defined
+    at router.post (/opt/gopath/src/fabric-samples/routes.js:29:81)
+    at Layer.handle [as handle_request] (/opt/gopath/src/fabric-samples/node_modules/express/lib/router/layer.js:95:5)
+    at next (/opt/gopath/src/fabric-samples/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/opt/gopath/src/fabric-samples/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/opt/gopath/src/fabric-samples/node_modules/express/lib/router/layer.js:95:5)
+    at /opt/gopath/src/fabric-samples/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/opt/gopath/src/fabric-samples/node_modules/express/lib/router/index.js:335:12)
+    at next (/opt/gopath/src/fabric-samples/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/opt/gopath/src/fabric-samples/node_modules/express/lib/router/index.js:174:3)
+    at router (/opt/gopath/src/fabric-samples/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/opt/gopath/src/fabric-samples/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/opt/gopath/src/fabric-samples/node_modules/express/lib/router/index.js:317:13)
+    at /opt/gopath/src/fabric-samples/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/opt/gopath/src/fabric-samples/node_modules/express/lib/router/index.js:335:12)
+    at next (/opt/gopath/src/fabric-samples/node_modules/express/lib/router/index.js:275:10)
+    at logger (/opt/gopath/src/fabric-samples/node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/opt/gopath/src/fabric-samples/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/opt/gopath/src/fabric-samples/node_modules/express/lib/router/index.js:317:13)
+    at /opt/gopath/src/fabric-samples/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/opt/gopath/src/fabric-samples/node_modules/express/lib/router/index.js:335:12)
+    at next (/opt/gopath/src/fabric-samples/node_modules/express/lib/router/index.js:275:10)
+    at /opt/gopath/src/fabric-samples/node_modules/body-parser/lib/read.js:130:5
+[32m[2017-09-06 17:54:51.490] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:54:51.492] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:54:51.492] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 17:54:51 GMT+0530 (IST) <<<
+[32m[2017-09-06 17:54:51.492] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:54:51.492] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 17:54:51.492] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 17:54:51.492] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 17:54:51.493] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:54:51.493] [INFO] loggingHelper - [39mCreated logger for app.js at level ALL
+[34m[2017-09-06 17:54:51.493] [TRACE] app.js - [39msetup : entry
+[34m[2017-09-06 17:54:51.493] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 17:54:51.494] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 17:54:51.498] [TRACE] app.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 17:54:51.499] [TRACE] app.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 17:54:51.499] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 17:54:51.499] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 17:54:51.505] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 17:54:51.522] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[32m[2017-09-06 17:54:51.725] [INFO] console - [39mCheck user is enrolled, and set a query URL in the network
+[32m[2017-09-06 17:54:51.730] [INFO] console - [39mAssigning transaction_id:  1a66614270ede7f63009e227a220faeb9b29056391904bd4caafc9de41d6202c
+[31m[2017-09-06 17:54:51.750] [ERROR] console - [39mtransaction proposal was bad
+[31m[2017-09-06 17:54:51.751] [ERROR] console - [39mFailed to send Proposal or receive valid response. Response null or status is not 200. exiting...
+[31m[2017-09-06 17:54:51.751] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[33m[2017-09-06 17:54:52.250] [WARN] console - [39mDb.prototype.authenticate method will no longer be available in the next major release 3.x as MongoDB 3.6 will only allow auth against users in the admin db and will no longer allow multiple credentials on a socket. Please authenticate using MongoClient.connect with auth credentials.
+[32m[2017-09-06 17:54:52.967] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 17:54:52.976] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 17:54:52.976] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 17:54:52.977] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 17:54:52.977] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 17:54:52.979] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 17:54:52.979] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 17:54:53.033] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 17:54:53.040] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:54:53.040] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 17:54:53.356] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 17:54:53.368] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 17:54:53.368] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 17:54:53.368] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 17:54:53.369] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:54:53.370] [TRACE] kv_store_model - [39mget : params - {"id":"member.risabh.s"} 
+[32m[2017-09-06 17:54:53.691] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.risabh.s - undefined
+[32m[2017-09-06 17:54:53.701] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: risabh.s - undefined
+[34m[2017-09-06 17:54:53.702] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-09-06 17:54:53.704] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: risabh.s - undefined
+[32m[2017-09-06 17:54:53.704] [INFO] console - [39mserver is running on8080
+[31m[2017-09-06 17:54:59.736] [ERROR] console - [39m(node:31649) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 2): RangeError: Invalid status code: 0
+[32m[2017-09-06 17:57:20.929] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:57:20.930] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:57:20.930] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 17:57:20 GMT+0530 (IST) <<<
+[32m[2017-09-06 17:57:20.930] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:57:20.930] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 17:57:20.931] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 17:57:20.931] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 17:57:20.931] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:57:20.931] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 17:57:20.931] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 17:57:20.932] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 17:57:20.932] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 17:57:20.937] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 17:57:20.937] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 17:57:20.938] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 17:57:20.938] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 17:57:20.946] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 17:57:20.963] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[31m[2017-09-06 17:57:21.160] [ERROR] console - [39mError: EACCES: permission denied, open '/home/dhananjayp/.hfc-key-store/5890f0061619c06fb29dea8cb304edecc020fe63f41a6db109f1e227cc1cb2a8-pub'
+    at Error (native)
+[31m[2017-09-06 17:57:21.161] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[33m[2017-09-06 17:57:21.725] [WARN] console - [39mDb.prototype.authenticate method will no longer be available in the next major release 3.x as MongoDB 3.6 will only allow auth against users in the admin db and will no longer allow multiple credentials on a socket. Please authenticate using MongoClient.connect with auth credentials.
+[32m[2017-09-06 17:57:22.413] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 17:57:22.421] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 17:57:22.422] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 17:57:22.423] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 17:57:22.423] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 17:57:22.424] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 17:57:22.425] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 17:57:22.479] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 17:57:22.485] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:57:22.485] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 17:57:22.796] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 17:57:22.808] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 17:57:22.808] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 17:57:22.808] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 17:57:22.810] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:57:22.810] [TRACE] kv_store_model - [39mget : params - {"id":"member.dhananjay.p"} 
+[32m[2017-09-06 17:57:23.118] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.dhananjay.p - undefined
+[32m[2017-09-06 17:57:23.128] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: dhananjay.p - undefined
+[34m[2017-09-06 17:57:23.128] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-09-06 17:57:23.131] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: dhananjay.p - undefined
+[32m[2017-09-06 17:57:23.131] [INFO] console - [39mserver is running on3000
+[31m[2017-09-06 17:57:52.098] [ERROR] console - [39m(node:31747) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 3): RangeError: Invalid status code: 0
+[32m[2017-09-06 17:58:59.943] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:58:59.944] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:58:59.944] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 17:58:59 GMT+0530 (IST) <<<
+[32m[2017-09-06 17:58:59.944] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 17:58:59.944] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 17:58:59.944] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 17:58:59.945] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 17:58:59.945] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 17:58:59.945] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 17:58:59.945] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 17:58:59.945] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 17:58:59.945] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 17:58:59.951] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 17:58:59.951] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 17:58:59.951] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 17:58:59.951] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 17:58:59.957] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 17:58:59.974] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[31m[2017-09-06 17:59:00.171] [ERROR] console - [39mError: EACCES: permission denied, open '/home/dhananjayp/.hfc-key-store/5890f0061619c06fb29dea8cb304edecc020fe63f41a6db109f1e227cc1cb2a8-pub'
+    at Error (native)
+[31m[2017-09-06 17:59:00.171] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[32m[2017-09-06 17:59:01.401] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 17:59:01.411] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 17:59:01.411] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 17:59:01.412] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 17:59:01.412] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 17:59:01.414] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 17:59:01.415] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 17:59:01.474] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 17:59:01.482] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:59:01.482] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 17:59:01.796] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 17:59:01.818] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 17:59:01.819] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 17:59:01.821] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 17:59:01.827] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 17:59:01.827] [TRACE] kv_store_model - [39mget : params - {"id":"member.dhananjay.p"} 
+[32m[2017-09-06 17:59:02.136] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.dhananjay.p - undefined
+[32m[2017-09-06 17:59:02.143] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: dhananjay.p - undefined
+[34m[2017-09-06 17:59:02.144] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-09-06 17:59:02.146] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: dhananjay.p - undefined
+[32m[2017-09-06 17:59:02.147] [INFO] console - [39mserver is running on3000
+[31m[2017-09-06 17:59:26.182] [ERROR] console - [39m(node:31793) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 3): RangeError: Invalid status code: 0
+[32m[2017-09-06 18:01:16.254] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 18:01:16.255] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 18:01:16.256] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 18:01:16 GMT+0530 (IST) <<<
+[32m[2017-09-06 18:01:16.256] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 18:01:16.256] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 18:01:16.256] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 18:01:16.256] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 18:01:16.257] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 18:01:16.257] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 18:01:16.257] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 18:01:16.258] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 18:01:16.258] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 18:01:16.263] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 18:01:16.263] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 18:01:16.264] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 18:01:16.264] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 18:01:16.269] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 18:01:16.287] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[31m[2017-09-06 18:01:16.482] [ERROR] console - [39mError: EACCES: permission denied, open '/home/dhananjayp/.hfc-key-store/5890f0061619c06fb29dea8cb304edecc020fe63f41a6db109f1e227cc1cb2a8-pub'
+    at Error (native)
+[31m[2017-09-06 18:01:16.482] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[32m[2017-09-06 18:01:17.747] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 18:01:17.755] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 18:01:17.755] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 18:01:17.756] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 18:01:17.756] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 18:01:17.759] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 18:01:17.759] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 18:01:17.821] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 18:01:17.829] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 18:01:17.830] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 18:01:18.148] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 18:01:18.154] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 18:01:18.154] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 18:01:18.155] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 18:01:18.156] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 18:01:18.157] [TRACE] kv_store_model - [39mget : params - {"id":"member.dhananjay.p"} 
+[32m[2017-09-06 18:01:18.468] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.dhananjay.p - undefined
+[32m[2017-09-06 18:01:18.480] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: dhananjay.p - undefined
+[34m[2017-09-06 18:01:18.481] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-09-06 18:01:18.482] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: dhananjay.p - undefined
+[32m[2017-09-06 18:01:18.484] [INFO] console - [39mserver is running on3000
+[32m[2017-09-06 18:07:05.435] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 18:07:05.436] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 18:07:05.436] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 18:07:05 GMT+0530 (IST) <<<
+[32m[2017-09-06 18:07:05.436] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 18:07:05.436] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 18:07:05.436] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 18:07:05.437] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 18:07:05.437] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 18:07:05.437] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 18:07:05.437] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 18:07:05.438] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 18:07:05.438] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 18:07:05.442] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 18:07:05.442] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 18:07:05.443] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 18:07:05.443] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 18:07:05.450] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 18:07:05.468] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[31m[2017-09-06 18:07:05.649] [ERROR] console - [39mError: EACCES: permission denied, open '/home/dhananjayp/.hfc-key-store/5890f0061619c06fb29dea8cb304edecc020fe63f41a6db109f1e227cc1cb2a8-pub'
+    at Error (native)
+[31m[2017-09-06 18:07:05.649] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[32m[2017-09-06 18:07:06.910] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 18:07:06.919] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 18:07:06.919] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 18:07:06.920] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 18:07:06.920] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 18:07:06.922] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 18:07:06.922] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[31m[2017-09-06 18:07:06.923] [ERROR] blockchain_network - [39mconfigureNetwork : Could not read cert: ./us.blockchain.ibm.com.cert - {}
+[31m[2017-09-06 18:07:06.924] [ERROR] blockchain_network - [39msetupBlockchain : Could not setup blockchain - {"statusCode":500,"body":"Could not read cert: ./us.blockchain.ibm.com.cert"}
+[31m[2017-09-06 18:07:06.924] [ERROR] blockchain_sample_client.js - [39mBlockchain setup failed. exiting... : [object Object] - {}
+[32m[2017-09-06 18:07:06.924] [INFO] console - [39mrunClient Error Occurred { statusCode: 500,
+  body: 'Could not setup blockchain',
+  err: 
+   { statusCode: 500,
+     body: 'Could not read cert: ./us.blockchain.ibm.com.cert' } }
+[32m[2017-09-06 18:07:06.926] [INFO] console - [39mexit called
+[32m[2017-09-06 18:08:26.696] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 18:08:26.698] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 18:08:26.698] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 18:08:26 GMT+0530 (IST) <<<
+[32m[2017-09-06 18:08:26.698] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 18:08:26.698] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 18:08:26.699] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 18:08:26.699] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 18:08:26.699] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 18:08:26.699] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 18:08:26.699] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 18:08:26.699] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 18:08:26.700] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 18:08:26.705] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 18:08:26.705] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 18:08:26.705] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 18:08:26.705] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 18:08:26.711] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 18:08:26.727] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[31m[2017-09-06 18:08:26.913] [ERROR] console - [39mError: EACCES: permission denied, open '/home/dhananjayp/.hfc-key-store/5890f0061619c06fb29dea8cb304edecc020fe63f41a6db109f1e227cc1cb2a8-pub'
+    at Error (native)
+[31m[2017-09-06 18:08:26.913] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[32m[2017-09-06 18:08:28.137] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 18:08:28.140] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 18:08:28.140] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 18:08:28.141] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 18:08:28.141] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 18:08:28.143] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 18:08:28.144] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 18:08:28.206] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 18:08:28.212] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 18:08:28.213] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 18:08:28.525] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 18:08:28.545] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 18:08:28.546] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 18:08:28.547] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 18:08:28.552] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 18:08:28.553] [TRACE] kv_store_model - [39mget : params - {"id":"member.dhananjay.p"} 
+[32m[2017-09-06 18:08:28.865] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.dhananjay.p - undefined
+[32m[2017-09-06 18:08:28.871] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: dhananjay.p - undefined
+[34m[2017-09-06 18:08:28.871] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-09-06 18:08:28.873] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: dhananjay.p - undefined
+[32m[2017-09-06 18:08:28.874] [INFO] console - [39mserver is running on3000
+[32m[2017-09-06 18:15:41.163] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 18:15:41.165] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 18:15:41.165] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 18:15:41 GMT+0530 (IST) <<<
+[32m[2017-09-06 18:15:41.165] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 18:15:41.165] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 18:15:41.165] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 18:15:41.165] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 18:15:41.165] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 18:15:41.166] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 18:15:41.166] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 18:15:41.166] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 18:15:41.166] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 18:15:41.171] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 18:15:41.171] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 18:15:41.172] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 18:15:41.172] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 18:15:41.178] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 18:15:41.193] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[31m[2017-09-06 18:15:41.395] [ERROR] console - [39mError: EACCES: permission denied, open '/home/dhananjayp/.hfc-key-store/5890f0061619c06fb29dea8cb304edecc020fe63f41a6db109f1e227cc1cb2a8-pub'
+    at Error (native)
+[31m[2017-09-06 18:15:41.395] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[32m[2017-09-06 18:15:42.629] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 18:15:42.637] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 18:15:42.638] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 18:15:42.638] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 18:15:42.638] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 18:15:42.641] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 18:15:42.641] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 18:15:42.698] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 18:15:42.705] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 18:15:42.706] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 18:15:43.016] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 18:15:43.048] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 18:15:43.049] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 18:15:43.050] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 18:15:43.055] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 18:15:43.056] [TRACE] kv_store_model - [39mget : params - {"id":"member.dhananjay.p"} 
+[32m[2017-09-06 18:15:43.364] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.dhananjay.p - undefined
+[32m[2017-09-06 18:15:43.371] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: dhananjay.p - undefined
+[34m[2017-09-06 18:15:43.371] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-09-06 18:15:43.373] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: dhananjay.p - undefined
+[32m[2017-09-06 18:15:43.373] [INFO] console - [39mserver is running on3000
+[32m[2017-09-06 18:19:55.711] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 18:19:55.712] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 18:19:55.713] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 18:19:55 GMT+0530 (IST) <<<
+[32m[2017-09-06 18:19:55.713] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 18:19:55.713] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 18:19:55.713] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 18:19:55.713] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 18:19:55.714] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 18:19:55.714] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 18:19:55.714] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 18:19:55.715] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 18:19:55.715] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 18:19:55.720] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 18:19:55.720] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 18:19:55.721] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 18:19:55.721] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 18:19:55.726] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 18:19:55.743] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[32m[2017-09-06 18:19:55.945] [INFO] console - [39mCheck user is enrolled, and set a query URL in the network
+[32m[2017-09-06 18:19:55.949] [INFO] console - [39mAssigning transaction_id:  727a77a509ee453d36a2451b7a08843f59b79985073294450af61b96cc9da938
+[31m[2017-09-06 18:19:55.967] [ERROR] console - [39mtransaction proposal was bad
+[31m[2017-09-06 18:19:55.968] [ERROR] console - [39mFailed to send Proposal or receive valid response. Response null or status is not 200. exiting...
+[31m[2017-09-06 18:19:55.968] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[32m[2017-09-06 18:19:57.171] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 18:19:57.174] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 18:19:57.174] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 18:19:57.175] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 18:19:57.175] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 18:19:57.177] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 18:19:57.178] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 18:19:57.238] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 18:19:57.246] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 18:19:57.246] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 18:19:57.558] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 18:19:57.581] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 18:19:57.582] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 18:19:57.583] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 18:19:57.588] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 18:19:57.589] [TRACE] kv_store_model - [39mget : params - {"id":"member.dhananjay.p"} 
+[32m[2017-09-06 18:19:57.898] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.dhananjay.p - undefined
+[32m[2017-09-06 18:19:57.909] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: dhananjay.p - undefined
+[34m[2017-09-06 18:19:57.909] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-09-06 18:19:57.911] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: dhananjay.p - undefined
+[32m[2017-09-06 18:19:57.912] [INFO] console - [39mserver is running on3000
+[32m[2017-09-06 18:31:23.067] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 18:31:23.068] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 18:31:23.072] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 18:31:23 GMT+0530 (IST) <<<
+[32m[2017-09-06 18:31:23.073] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 18:31:23.074] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 18:31:23.074] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 18:31:23.075] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 18:31:23.075] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 18:31:23.076] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 18:31:23.076] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 18:31:23.077] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 18:31:23.077] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 18:31:23.082] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 18:31:23.082] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 18:31:23.083] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 18:31:23.083] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 18:31:23.091] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 18:31:23.108] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[32m[2017-09-06 18:31:23.360] [INFO] console - [39mCheck user is enrolled, and set a query URL in the network
+[32m[2017-09-06 18:31:23.366] [INFO] console - [39mAssigning transaction_id:  be5788330c4df2d41c40cfbe202fcd1a2c6de659072b81d74d27ca8d93cbeb76
+[31m[2017-09-06 18:31:23.386] [ERROR] console - [39mtransaction proposal was bad
+[31m[2017-09-06 18:31:23.386] [ERROR] console - [39mFailed to send Proposal or receive valid response. Response null or status is not 200. exiting...
+[31m[2017-09-06 18:31:23.388] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[32m[2017-09-06 18:31:24.558] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-09-06 18:31:24.567] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-09-06 18:31:24.567] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-09-06 18:31:24.567] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-09-06 18:31:24.567] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-09-06 18:31:24.569] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-09-06 18:31:24.570] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-09-06 18:31:24.634] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-09-06 18:31:24.642] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 18:31:24.642] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-09-06 18:31:24.958] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-09-06 18:31:24.965] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-09-06 18:31:24.965] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-09-06 18:31:24.965] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-09-06 18:31:24.967] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-09-06 18:31:24.967] [TRACE] kv_store_model - [39mget : params - {"id":"member.dhananjay.p"} 
+[32m[2017-09-06 18:31:25.280] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.dhananjay.p - undefined
+[32m[2017-09-06 19:25:37.368] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 19:25:37.369] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 19:25:37.369] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 19:25:37 GMT+0530 (IST) <<<
+[32m[2017-09-06 19:25:37.370] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 19:25:37.370] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 19:25:37.370] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 19:25:37.370] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 19:25:37.370] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 19:25:37.370] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 19:25:37.371] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 19:25:37.371] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 19:25:37.371] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 19:25:37.376] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 19:25:37.376] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 19:25:37.377] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 19:25:37.377] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 19:25:37.382] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 19:25:37.399] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[32m[2017-09-06 19:25:37.599] [INFO] console - [39mCheck user is enrolled, and set a query URL in the network
+[32m[2017-09-06 19:25:37.604] [INFO] console - [39mAssigning transaction_id:  59b88b4fff337fae456148049836649eb217e101a6d0194792bd6d9ffd39dea1
+[32m[2017-09-06 19:25:37.637] [INFO] console - [39mtransaction proposal was good
+[32m[2017-09-06 19:25:37.638] [INFO] console - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0E! ��\t0>ﾟ�X��ĉ|�C������N�o�"K e��O�p����&��;ᖡ�v��(�'��^��
+[31m[2017-09-06 19:25:37.653] [ERROR] console - [39mFailed to send transaction and get notifications within the timeout period.
+[32m[2017-09-06 19:26:36.867] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 19:26:36.868] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 19:26:36.868] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 19:26:36 GMT+0530 (IST) <<<
+[32m[2017-09-06 19:26:36.868] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 19:26:36.868] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 19:26:36.869] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 19:26:36.869] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 19:26:36.869] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 19:26:36.869] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 19:26:36.870] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 19:26:36.870] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 19:26:36.870] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 19:26:36.875] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 19:26:36.875] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 19:26:36.876] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 19:26:36.876] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 19:26:36.881] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 19:26:36.899] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[32m[2017-09-06 19:26:37.093] [INFO] console - [39mCheck user is enrolled, and set a query URL in the network
+[32m[2017-09-06 19:26:37.098] [INFO] console - [39mAssigning transaction_id:  a3d5dad40befa699f81096fa84b335aff554d55b79ab732314093d71113cb44e
+[32m[2017-09-06 19:26:37.129] [INFO] console - [39mtransaction proposal was good
+[32m[2017-09-06 19:26:37.130] [INFO] console - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0D  8����ڎ�z��A�C�X��P�U
+V}�Tj�� U.bDL�bYL�q��W	L�.��t����Bp
+[31m[2017-09-06 19:26:37.145] [ERROR] console - [39mFailed to send transaction and get notifications within the timeout period.
+[31m[2017-09-06 19:26:37.146] [ERROR] console - [39mFailed to order the transaction. Error code: undefined
+[32m[2017-09-06 19:26:37.148] [INFO] console - [39mexit called
+[32m[2017-09-06 19:29:06.777] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 19:29:06.778] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 19:29:06.778] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 19:29:06 GMT+0530 (IST) <<<
+[32m[2017-09-06 19:29:06.778] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 19:29:06.778] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 19:29:06.779] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 19:29:06.779] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 19:29:06.779] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 19:29:06.780] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 19:29:06.780] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 19:29:06.780] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 19:29:06.780] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 19:29:06.785] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 19:29:06.786] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 19:29:06.786] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 19:29:06.786] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 19:29:06.791] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 19:29:06.808] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[32m[2017-09-06 19:29:07.005] [INFO] console - [39mCheck user is enrolled, and set a query URL in the network
+[32m[2017-09-06 19:29:07.010] [INFO] console - [39mAssigning transaction_id:  3859360e1b16710886d7ad4c02ce9aa1ae41eaf02ebdf7b3dfca4770d8a901d9
+[32m[2017-09-06 19:29:07.042] [INFO] console - [39mtransaction proposal was good
+[32m[2017-09-06 19:29:07.042] [INFO] console - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0E! ����crsC�������3@��vyX��P��� L	�q��O����DP�	N ���gckG-�/cRy
+[31m[2017-09-06 19:29:07.058] [ERROR] console - [39mFailed to send transaction and get notifications within the timeout period.
+[32m[2017-09-06 19:30:59.815] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 19:30:59.816] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 19:30:59.816] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Wed Sep 06 2017 19:30:59 GMT+0530 (IST) <<<
+[32m[2017-09-06 19:30:59.816] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-09-06 19:30:59.816] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/opt/gopath/src/fabric-samples/app.js
+[32m[2017-09-06 19:30:59.817] [INFO] BlockchainSampleClient - [39mNode version: v6.11.1
+[32m[2017-09-06 19:30:59.817] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.11.1","v8":"5.1.281.103","uv":"1.11.0","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-09-06 19:30:59.817] [INFO] BlockchainSampleClient - [39m
+[32m[2017-09-06 19:30:59.817] [INFO] loggingHelper - [39mCreated logger for blockchain_sample_client.js at level ALL
+[34m[2017-09-06 19:30:59.818] [TRACE] blockchain_sample_client.js - [39msetup : entry
+[34m[2017-09-06 19:30:59.818] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-09-06 19:30:59.818] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix","password":"a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def","host":"82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com","port":443,"url":"https://82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix:a08027a3322ee8bde6fd011aa7f3a53f943f1f6861d6c03e41bdfc206f811def@82e35471-ca30-4f2a-a19d-618068e02f5e-bluemix.cloudant.com"}} 
+[34m[2017-09-06 19:30:59.823] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-09-06 19:30:59.823] [TRACE] blockchain_sample_client.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-09-06 19:30:59.823] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-09-06 19:30:59.824] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-09-06 19:30:59.829] [INFO] console - [39mCreate a client and set the wallet location
+[32m[2017-09-06 19:30:59.846] [INFO] console - [39mSet wallet path, and associate user  PeerAdmin  with application
+[32m[2017-09-06 19:31:00.042] [INFO] console - [39mCheck user is enrolled, and set a query URL in the network
+[32m[2017-09-06 19:31:00.047] [INFO] console - [39mAssigning transaction_id:  6ceeff519b95c4a6d78726dd73950fe65e9c6b1956891bd494443d07ada12725
+[32m[2017-09-06 19:31:00.072] [INFO] console - [39mtransaction proposal was good
+[32m[2017-09-06 19:31:00.073] [INFO] console - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0D LX��.�ΌQY�����5���adN3R�� q�/�f�	ev7^�Uo�ﲒ�9Ҧf��lO����
+[31m[2017-09-06 19:31:00.092] [ERROR] console - [39mFailed to send transaction and get notifications within the timeout period.
